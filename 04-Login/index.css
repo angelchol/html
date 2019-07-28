@@ -1,0 +1,75 @@
+body{
+padding: 0px;
+margin: 0;
+}
+.login {
+  text-align: center;
+}
+
+.login-group {
+  display: block;
+  width: 100%;
+}
+.login-group input {
+  padding: 10px;
+  margin: 10px 10px;
+}
+.login-group span {
+  padding: 7px;
+  margin: 3px;
+  align-content: left;
+}
+.login button {
+  border: none;
+  background-color: darkorange;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 6px darkgoldenrod;
+}
+
+.login button:hover {
+  box-shadow: 0 4px darkgoldenrod;
+  top: -2px;
+}
+.login button:active,
+button:focus {
+  box-shadow: 0;
+  top: -2px;
+}
+
+.nav {
+background-color: black;
+width: 100%;
+height: fit-content;
+padding: 10px;
+}
+
+.nav ul {
+list-style: none;
+
+}
+
+.nav li {
+display: inline-block;
+justify-content: space-between;	
+position: relative;
+}
+.nav li button {
+	border: none;
+	padding: 10px;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+}
+.nav li.show {
+text-align: left;
+padding: 10px;
+}
+.nav li.hide {
+text-align: left;
+padding: 10px;
+margin-right: 20px;
+
+}

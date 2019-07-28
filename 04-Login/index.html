@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Login form</title>
+  </head>
+  <body>
+  <div class="nav">
+  <ul>
+  <li class="show"> 
+  <button  id="show-btn">Show form</button>
+  </li>
+  <li class="hide"> 
+  <button  id="hide-btn">Hide form</button>
+  </li>
+  </ul>
+  </div>
+    
+    <div id="login" class="login">
+      <h1>Login</h1>
+      <form onsubmit="submitAction(event)">
+        <div class="login-group">
+          <span>Email</span>
+          <input type="text" placeholder="Enter your email" />
+        </div>
+        <div class="login-group">
+          <span>Password</span>
+          <input type="password" placeholder="Enter your password" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      var loginForm = document.querySelector(".login");
+	  loginForm.style.display = "none";
+	  var hideBtn = document.querySelector("#hide-btn");
+	  hideBtn.style.display = "none";
+      var showBtn = document.getElementById("show-btn");
+		
+        showBtn.addEventListener("click", function() {
+          loginForm.style.display = "block";
+		  hideBtn.style.display = "inline-block";
+		  showBtn.style.display = "none";
+        });
+	 hideBtn.addEventListener("click", function() {
+          loginForm.style.display = "none";
+		  showBtn.style.display = "inline-block";
+		  hideBtn.style.display = "none";
+        });
+	  
+	 function submitAction(event) {
+		event.preventDefault();
+		var response = document.createElement("p");
+		response.innerHTML = "Submitted";
+		loginForm.appendChild(response);
+		
+	 }
+    </script>
+  </body>
+</html>
