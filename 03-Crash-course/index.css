@@ -1,0 +1,23 @@
+.my-class {
+  background-color: dodgerblue;
+}
+.my-class p {
+  color: salmon;
+}
+
+.my-class2 {
+  background-color: green;
+  border: 1px solid darkblue;
+  margin-bottom: 20px;
+}
+.my-class2 p {
+  display: inline-block;
+  margin-right: 50px;
+  color: salmon;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.my-class2 h1 {
+  color: darkgoldenrod;
+}
